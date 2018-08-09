@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 0.2.7
+
+- Strip color codes before calculating frame length being cleared
+
 ### 0.2.6
 
 - Update CLI spinners to 1.1.0 (adds "weather" and "christmas")
