@@ -3,14 +3,18 @@
 require File.dirname(__FILE__) + "/lib/whirly/version"
 
 Gem::Specification.new do |gem|
-  gem.name          = "whirly"
+  gem.name          = "murano-cli-whirly"
   gem.version       = Whirly::VERSION
   gem.summary       = "Whirly: The friendly terminal spinner"
   gem.description   = "Simple terminal spinner with support for custom spinners. Includes spinners from npm's cli-spinners."
-  gem.authors       = ["Jan Lelis"]
-  gem.email         = ["mail@janlelis.de"]
-  gem.homepage      = "https://github.com/janlelis/whirly"
-  gem.license       = "MIT"
+  # (lb); Original thanks to:
+  #   gem.authors       = ["Jan Lelis"]
+  #   gem.email         = ["mail@janlelis.de"]
+  #   gem.homepage      = "https://github.com/janlelis/whirly"
+  gem.authors       = ['Exosite LLC']
+  gem.email         = ['murano-cli-whirly@exosite.com']
+  gem.homepage      = 'https://github.com/exosite/murano-cli-whirly'
+  gem.license       = 'MIT'
 
   gem.files         = Dir["{**/}{.*,*}"].select{ |path| File.file?(path) && path !~ /^(pkg|data)/ } + %w[
                         data/cli-spinners.json
