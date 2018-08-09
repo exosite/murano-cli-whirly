@@ -204,9 +204,17 @@ module Whirly
     return unless @current_frame
     case @options[:ansi_escape_mode]
     when "restore"
-      @options[:stream].print(render_prefix + (
-          ' ' * (Unicode::DisplayWidth.of(@current_frame, @options[:ambiguous_character_width]) + 1)
-      ) + render_suffix)
+      @options[:stream].print(
+        render_prefix + (
+          ' ' * (
+          Unicode::DisplayWidth.of(
+            # Strip 0-width control (color) codes.
+            @current_frame.gsub(/\e\[[;0-9]+m/, ''),
+            @options[:ambiguous_character_width]) + 1
+          )
+        ) +
+        render_suffix
+      )
     when "line"
       @options[:stream].print "\e[1K"
     end
