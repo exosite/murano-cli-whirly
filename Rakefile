@@ -1,3 +1,5 @@
+require 'bundler/gem_tasks'
+
 # # #
 # Get gemspec info
 
