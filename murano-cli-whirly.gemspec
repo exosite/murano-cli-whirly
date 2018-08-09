@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require File.dirname(__FILE__) + "/lib/whirly/version"
+require File.dirname(__FILE__) + "/lib/murano-cli-whirly/version"
 
 Gem::Specification.new do |gem|
   gem.name          = "murano-cli-whirly"

@@ -1,4 +1,4 @@
-require_relative "../lib/whirly"
+require_relative "../lib/murano-cli-whirly"
 require "minitest/autorun"
 require "paint"
 # require "irbtools/binding"

@@ -1,5 +1,5 @@
-require_relative "whirly/version"
-require_relative "whirly/spinners"
+require_relative "murano-cli-whirly/version"
+require_relative "murano-cli-whirly/spinners"
 
 require "unicode/display_width"
 
